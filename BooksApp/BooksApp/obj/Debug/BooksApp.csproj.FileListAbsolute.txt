@@ -1,0 +1,15 @@
+C:\@GitIdsanchezf\BooksApp\BooksApp\BooksApp\bin\Debug\BooksApp.dll
+C:\@GitIdsanchezf\BooksApp\BooksApp\BooksApp\bin\Debug\BooksApp.pdb
+C:\@GitIdsanchezf\BooksApp\BooksApp\BooksApp\bin\Debug\Xamarin.Forms.Core.dll
+C:\@GitIdsanchezf\BooksApp\BooksApp\BooksApp\bin\Debug\Xamarin.Forms.Platform.dll
+C:\@GitIdsanchezf\BooksApp\BooksApp\BooksApp\bin\Debug\Xamarin.Forms.Xaml.dll
+C:\@GitIdsanchezf\BooksApp\BooksApp\BooksApp\bin\Debug\Xamarin.Forms.Core.pdb
+C:\@GitIdsanchezf\BooksApp\BooksApp\BooksApp\bin\Debug\Xamarin.Forms.Core.xml
+C:\@GitIdsanchezf\BooksApp\BooksApp\BooksApp\bin\Debug\Xamarin.Forms.Platform.pdb
+C:\@GitIdsanchezf\BooksApp\BooksApp\BooksApp\bin\Debug\Xamarin.Forms.Xaml.pdb
+C:\@GitIdsanchezf\BooksApp\BooksApp\BooksApp\bin\Debug\Xamarin.Forms.Xaml.xml
+C:\@GitIdsanchezf\BooksApp\BooksApp\BooksApp\obj\Debug\BooksApp.csprojResolveAssemblyReference.cache
+C:\@GitIdsanchezf\BooksApp\BooksApp\BooksApp\obj\Debug\BooksApp.MainPage.xaml.g.cs
+C:\@GitIdsanchezf\BooksApp\BooksApp\BooksApp\obj\Debug\BooksApp.App.xaml.g.cs
+C:\@GitIdsanchezf\BooksApp\BooksApp\BooksApp\obj\Debug\BooksApp.dll
+C:\@GitIdsanchezf\BooksApp\BooksApp\BooksApp\obj\Debug\BooksApp.pdb
