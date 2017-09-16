@@ -13,7 +13,7 @@ namespace BooksApp
         {
             InitializeComponent();
 
-            MainPage = new BooksApp.MainPage();
+            MainPage = new NavigationPage(new BooksApp.Views.Book.BooksView());
         }
 
         protected override void OnStart()
