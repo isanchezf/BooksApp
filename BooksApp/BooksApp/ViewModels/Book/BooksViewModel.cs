@@ -1,28 +1,45 @@
-﻿using System.Linq;
-using System.Threading.Tasks;
-using BooksApp.Views.Book;
-using Xamarin.Forms;
-
-namespace BooksApp.ViewModels.Book
+﻿namespace BooksApp.ViewModels.Book
 {
     using System.Collections.Generic;
     using System.Collections.ObjectModel;
+    using System.Linq;
+    using System.Threading.Tasks;
+    using BooksApp.Views.Book;
+    using Xamarin.Forms;
     using BooksApp.ProxyClient;
     using Models;
+    using System.ComponentModel;
+    using System.Runtime.CompilerServices;
 
-    public class BooksViewModel
+    public class BooksViewModel : INotifyPropertyChanged
     {
-        public IList<Book> Books { get; }
+        #region Atributes
+        IList<Book> _books;
+        public IList<Book> Books
+        {
+            get => _books;
+            set
+            {
+                _books = value;
+            }
+        }
         private readonly BaseClient<Book> _bookContextWs;
+        public event PropertyChangedEventHandler PropertyChanged;
         public Command OnAddNewBookCommand { get; }
         public INavigation Navigation { get; set; }
+
+        bool _isBusy;
+        public bool IsBusy { get => _isBusy;
+            set { _isBusy = value; OnPropertyChanged(); }
+        }
+        #endregion Atributes
 
         public BooksViewModel(INavigation navigation)
         {
             Books = new ObservableCollection<Book>();
             _bookContextWs = new BaseClient<Book>("Books");
-            Task.Factory.StartNew(RechargeBooks);
-            OnAddNewBookCommand = new Command(async ()=> await AddBook());
+            Task.Factory.StartNew(LoadBooks);
+            OnAddNewBookCommand = new Command(async () => await AddBook());
             Navigation = navigation;
         }
 
@@ -30,19 +47,30 @@ namespace BooksApp.ViewModels.Book
         {
         }
 
-        private async Task AddBook()
+
+        void OnPropertyChanged([CallerMemberName] string name = null)
         {
-            await Navigation.PushModalAsync(new AddBookView());
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
         }
 
-        async void RechargeBooks()
+        private async Task AddBook()
         {
-            var bookCollection = await _bookContextWs.GetAll();
-            foreach (var book in bookCollection)
+            await Navigation.PushModalAsync(new AddBookView(_bookContextWs, Books));
+        }
+
+        async void LoadBooks()
+        {
+            IsBusy = true;
+            if (Books.Count <= 0)
             {
-                if (Books.All(b => b.Id != book.Id))
-                    Books.Add(book);
+                var booksResponse = await _bookContextWs.GetAll();
+
+                foreach (var item in booksResponse)
+                {
+                    Books.Add(item);
+                }
             }
+            IsBusy = false;
         }
     }
 }

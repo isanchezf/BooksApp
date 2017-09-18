@@ -38,8 +38,10 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Behaviors\ValidateEmptyEntryBehavior.cs" />
     <Compile Include="Models\Book.cs" />
     <Compile Include="ProxyClient\BaseClient.cs" />
+    <Compile Include="ViewModels\Book\AddBookViewModel.cs" />
     <Compile Include="Views\Book\AddBookView.xaml.cs">
       <DependentUpon>AddBookView.xaml</DependentUpon>
     </Compile>

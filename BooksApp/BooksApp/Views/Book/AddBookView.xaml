@@ -1,10 +1,38 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="BooksApp.Views.Book.AddBookView">
+             x:Class="BooksApp.Views.Book.AddBookView"
+             xmlns:LocalValidation="clr-namespace:BooksApp.Behaviors;assembly:BooksApp"
+             Title="Agregar Libro">
+    <!--xmlns:addBookViewModel="clr-namespace:BooksApp.ViewModels.Book;assembly=BooksApp"-->
+    <!--<ContentPage.BindingContext>
+        <addBookViewModel:BooksViewModel></addBookViewModel:BooksViewModel>
+    </ContentPage.BindingContext>-->
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin Forms!" />
+            <TableView Intent="Form" Root="Nuevo Libro">
+                <TableSection Title="Detail">
+                    <ViewCell>
+                        <Grid Padding="5, 6, 5, 6">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Grid.Column="0" Grid.Row="0" Text="Titulo"/>
+                            <Entry Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="3" AutomationId="tituloCell" Placeholder="Agregar Titulo" Text="{Binding BookEntity.Titulo, Mode=TwoWay}">
+                                <Entry.Behaviors>
+                                    <LocalValidation:ValidateEmptyEntryBehavior/>
+                                </Entry.Behaviors>
+                            </Entry>
+                        </Grid>
+                    </ViewCell>
+                    <EntryCell AutomationId="generoCell" Label="Genero" Placeholder="Agregar Genero" Text="{Binding BookEntity.Genero}"></EntryCell>
+                    <EntryCell AutomationId="autorCell" Label="Autor" Placeholder="Agregar Autor" Text="{Binding BookEntity.Autor}"></EntryCell>
+                </TableSection>
+            </TableView>
+            <Button Text="Agregar Libro" BorderRadius="0" Command="{ Binding AddBookCommand }"></Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

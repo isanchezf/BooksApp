@@ -8,8 +8,6 @@ C:\@GitIdsanchezf\BooksApp\BooksApp\BooksApp\bin\Debug\Xamarin.Forms.Core.xml
 C:\@GitIdsanchezf\BooksApp\BooksApp\BooksApp\bin\Debug\Xamarin.Forms.Platform.pdb
 C:\@GitIdsanchezf\BooksApp\BooksApp\BooksApp\bin\Debug\Xamarin.Forms.Xaml.pdb
 C:\@GitIdsanchezf\BooksApp\BooksApp\BooksApp\bin\Debug\Xamarin.Forms.Xaml.xml
-C:\@GitIdsanchezf\BooksApp\BooksApp\BooksApp\obj\Debug\BooksApp.csprojResolveAssemblyReference.cache
-C:\@GitIdsanchezf\BooksApp\BooksApp\BooksApp\obj\Debug\BooksApp.MainPage.xaml.g.cs
 C:\@GitIdsanchezf\BooksApp\BooksApp\BooksApp\obj\Debug\BooksApp.App.xaml.g.cs
 C:\@GitIdsanchezf\BooksApp\BooksApp\BooksApp\obj\Debug\BooksApp.dll
 C:\@GitIdsanchezf\BooksApp\BooksApp\BooksApp\obj\Debug\BooksApp.pdb
@@ -40,3 +38,16 @@ E:\idsfGit\BooksApp\BooksApp\BooksApp\obj\Debug\BooksApp.csproj.App.config
 E:\idsfGit\BooksApp\BooksApp\BooksApp\obj\Debug\BooksApp.Views.Book.BooksView.xaml.g.cs
 E:\idsfGit\BooksApp\BooksApp\BooksApp\obj\Debug\BooksApp.Views.Book.AddBookView.xaml.g.cs
 E:\idsfGit\BooksApp\BooksApp\BooksApp\obj\Debug\BooksApp.csprojResolveAssemblyReference.cache
+C:\@GitIdsanchezf\BooksApp\BooksApp\BooksApp\bin\Debug\BooksApp.dll.config
+C:\@GitIdsanchezf\BooksApp\BooksApp\BooksApp\bin\Debug\Newtonsoft.Json.dll
+C:\@GitIdsanchezf\BooksApp\BooksApp\BooksApp\bin\Debug\System.Net.Http.dll
+C:\@GitIdsanchezf\BooksApp\BooksApp\BooksApp\bin\Debug\System.Net.Http.Extensions.dll
+C:\@GitIdsanchezf\BooksApp\BooksApp\BooksApp\bin\Debug\System.Net.Http.Primitives.dll
+C:\@GitIdsanchezf\BooksApp\BooksApp\BooksApp\bin\Debug\Newtonsoft.Json.xml
+C:\@GitIdsanchezf\BooksApp\BooksApp\BooksApp\bin\Debug\System.Net.Http.xml
+C:\@GitIdsanchezf\BooksApp\BooksApp\BooksApp\bin\Debug\System.Net.Http.Extensions.xml
+C:\@GitIdsanchezf\BooksApp\BooksApp\BooksApp\bin\Debug\System.Net.Http.Primitives.xml
+C:\@GitIdsanchezf\BooksApp\BooksApp\BooksApp\obj\Debug\BooksApp.csproj.App.config
+C:\@GitIdsanchezf\BooksApp\BooksApp\BooksApp\obj\Debug\BooksApp.Views.Book.AddBookView.xaml.g.cs
+C:\@GitIdsanchezf\BooksApp\BooksApp\BooksApp\obj\Debug\BooksApp.Views.Book.BooksView.xaml.g.cs
+C:\@GitIdsanchezf\BooksApp\BooksApp\BooksApp\obj\Debug\BooksApp.csprojResolveAssemblyReference.cache

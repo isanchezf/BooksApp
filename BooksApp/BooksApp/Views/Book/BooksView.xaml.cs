@@ -16,9 +16,9 @@ namespace BooksApp.Views.Book
 
         public BooksView()
         {
-            InitializeComponent();
             BooksViewModelContext = new BooksViewModel(Navigation);
             BindingContext = BooksViewModelContext;
+            InitializeComponent();
         }
     }
 }

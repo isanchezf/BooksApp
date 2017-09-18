@@ -2,27 +2,36 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BooksApp.Views.Book.BooksView"
-             xmlns:bookViewModel="clr-namespace:BooksApp.ViewModels.Book;assembly=BooksApp"
              Title="Library Books">
-    <ContentPage.BindingContext>
+    <!--xmlns:bookViewModel="clr-namespace:BooksApp.ViewModels.Book;assembly=BooksApp"-->
+    <!--<ContentPage.BindingContext>
         <bookViewModel:BooksViewModel></bookViewModel:BooksViewModel>
-    </ContentPage.BindingContext>
+    </ContentPage.BindingContext>-->
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Add New" Icon="ic_action_new.png" Command="{Binding OnAddNewBookCommand }" />
         <ToolbarItem Text="Refresh" Icon="ic_autorenew.png" />
     </ContentPage.ToolbarItems>
-
-    <ListView ItemsSource="{Binding Books}">
-        <ListView.ItemTemplate>
-            <DataTemplate>
-                <TextCell Text="{Binding Titulo}" Detail="{Binding Genero}" TextColor="Black">
-                    <!--<TextCell.ContextActions>
+    <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <StackLayout AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1">
+            <ListView ItemsSource="{Binding Books}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding Titulo}" Detail="{Binding Genero}" TextColor="Black">
+                            <!--<TextCell.ContextActions>
                         <MenuItem Clicked="OnDeleteBook"
                                   CommandParameter="{Binding}"
                                   Text="Delete" IsDestructive="True" />
                     </TextCell.ContextActions>-->
-                </TextCell>
-            </DataTemplate>
-        </ListView.ItemTemplate>
-    </ListView>
+                        </TextCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+        <StackLayout IsVisible="{Binding IsBusy}" Padding="12"
+                 AbsoluteLayout.LayoutFlags="PositionProportional"
+                 AbsoluteLayout.LayoutBounds="0.5,0.5,-1,-1">
+            <ActivityIndicator IsRunning="{Binding IsBusy}" Color ="#80000000"/>
+            <Label Text="Loading..." HorizontalOptions="Center" TextColor="White"/>
+        </StackLayout>
+    </AbsoluteLayout>
 </ContentPage>
