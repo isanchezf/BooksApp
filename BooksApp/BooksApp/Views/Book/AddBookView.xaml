@@ -2,37 +2,66 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BooksApp.Views.Book.AddBookView"
-             xmlns:LocalValidation="clr-namespace:BooksApp.Behaviors;assembly:BooksApp"
+             xmlns:localValidation="clr-namespace:BooksApp.Behaviors;assembly:BooksApp"
              Title="Agregar Libro">
     <!--xmlns:addBookViewModel="clr-namespace:BooksApp.ViewModels.Book;assembly=BooksApp"-->
     <!--<ContentPage.BindingContext>
         <addBookViewModel:BooksViewModel></addBookViewModel:BooksViewModel>
     </ContentPage.BindingContext>-->
     <ContentPage.Content>
-        <StackLayout>
-            <TableView Intent="Form" Root="Nuevo Libro">
-                <TableSection Title="Detail">
-                    <ViewCell>
-                        <Grid Padding="5, 6, 5, 6">
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="*"/>
-                                <ColumnDefinition Width="*"/>
-                                <ColumnDefinition Width="*"/>
-                                <ColumnDefinition Width="*"/>
-                            </Grid.ColumnDefinitions>
-                            <Label Grid.Column="0" Grid.Row="0" Text="Titulo"/>
-                            <Entry Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="3" AutomationId="tituloCell" Placeholder="Agregar Titulo" Text="{Binding BookEntity.Titulo, Mode=TwoWay}">
-                                <Entry.Behaviors>
-                                    <LocalValidation:ValidateEmptyEntryBehavior/>
-                                </Entry.Behaviors>
-                            </Entry>
-                        </Grid>
-                    </ViewCell>
-                    <EntryCell AutomationId="generoCell" Label="Genero" Placeholder="Agregar Genero" Text="{Binding BookEntity.Genero}"></EntryCell>
-                    <EntryCell AutomationId="autorCell" Label="Autor" Placeholder="Agregar Autor" Text="{Binding BookEntity.Autor}"></EntryCell>
-                </TableSection>
-            </TableView>
-            <Button Text="Agregar Libro" BorderRadius="0" Command="{ Binding AddBookCommand }"></Button>
-        </StackLayout>
+        <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+
+            <StackLayout AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1">
+                <TableView Intent="Form" Root="Nuevo Libro">
+                    <TableSection Title="Detail">
+                        <ViewCell>
+                            <Grid Padding="5, 6, 5, 6">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Column="0" Grid.Row="0" Text="Titulo"/>
+                                <Entry Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="3" 
+                                   Placeholder="Agregar Titulo" AutomationId="tituloCell" 
+                                   Text="{Binding Titulo, Mode=TwoWay}">
+                                    <Entry.Behaviors>
+                                        <localValidation:ValidateEmptyEntryBehavior IsValid="{Binding IsValidTitle, Mode=TwoWay}" />
+                                    </Entry.Behaviors>
+                                </Entry>
+                            </Grid>
+                        </ViewCell>
+                        <ViewCell>
+                            <Grid Padding="5, 6, 5, 6">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Column="0" Grid.Row="0" Text="Genero"/>
+                                <Entry Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="3" 
+                                       Placeholder="Agregar Genero" AutomationId="generoCell" 
+                                       Text="{Binding Genero, Mode=TwoWay}">
+                                    <Entry.Behaviors>
+                                        <localValidation:ValidateEmptyEntryBehavior IsValid="{Binding IsValidGenre, Mode=TwoWay}" />
+                                    </Entry.Behaviors>
+                                </Entry>
+                            </Grid>
+                        </ViewCell>
+                        <EntryCell AutomationId="autorCell" Label="Autor" Placeholder="Agregar Autor" Text="{Binding Autor}"></EntryCell>
+                    </TableSection>
+                </TableView>
+                <Button Text="Agregar Libro" BorderRadius="0" Command="{ Binding AddBookCommand }" IsEnabled="{Binding IsValidForm}">
+                </Button>
+            </StackLayout>
+            <StackLayout IsVisible="{Binding IsBusy}" Padding="12"
+                         AbsoluteLayout.LayoutFlags="PositionProportional"
+                         AbsoluteLayout.LayoutBounds="0.5,0.5,-1,-1">
+                <ActivityIndicator IsRunning="{Binding IsBusy}" Color ="#80000000"/>
+                <Label Text="Loading..." HorizontalOptions="Center" TextColor="White"/>
+            </StackLayout>
+        </AbsoluteLayout>
     </ContentPage.Content>
 </ContentPage>

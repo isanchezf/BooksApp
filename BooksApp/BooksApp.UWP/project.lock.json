@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "targets": {
     "UAP,Version=v10.0.10586": {
       "Microsoft.CSharp/4.3.0": {
@@ -5570,9 +5570,6 @@
       },
       "runtime.win10-arm-aot.runtime.native.System.IO.Compression/4.0.1": {
         "type": "package",
-        "compile": {
-          "runtimes/win10-arm-aot/lib/netcore50/_._": {}
-        },
         "runtime": {
           "runtimes/win10-arm-aot/lib/netcore50/clrcompression.dll": {}
         }
@@ -10547,9 +10544,6 @@
       },
       "runtime.win10-x64-aot.runtime.native.System.IO.Compression/4.0.1": {
         "type": "package",
-        "compile": {
-          "runtimes/win10-x64-aot/lib/netcore50/_._": {}
-        },
         "runtime": {
           "runtimes/win10-x64-aot/lib/netcore50/clrcompression.dll": {}
         }
@@ -15530,9 +15524,6 @@
       },
       "runtime.win10-x86-aot.runtime.native.System.IO.Compression/4.0.1": {
         "type": "package",
-        "compile": {
-          "runtimes/win10-x86-aot/lib/netcore50/_._": {}
-        },
         "runtime": {
           "runtimes/win10-x86-aot/lib/netcore50/clrcompression.dll": {}
         }
@@ -24109,20 +24100,30 @@
     "UAP,Version=v10.0.10586": []
   },
   "packageFolders": {
-    "C:\\Users\\ivanc\\.nuget\\packages\\": {}
+    "C:\\Users\\isanchez\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\@GitIdsanchezf\\BooksApp\\BooksApp\\BooksApp.UWP\\BooksApp.UWP.csproj",
+      "projectUniqueName": "E:\\idsfGit\\BooksApp\\BooksApp\\BooksApp.UWP\\BooksApp.UWP.csproj",
       "projectName": "BooksApp.UWP",
-      "projectPath": "C:\\@GitIdsanchezf\\BooksApp\\BooksApp\\BooksApp.UWP\\BooksApp.UWP.csproj",
-      "projectJsonPath": "C:\\@GitIdsanchezf\\BooksApp\\BooksApp\\BooksApp.UWP\\project.json",
+      "projectPath": "E:\\idsfGit\\BooksApp\\BooksApp\\BooksApp.UWP\\BooksApp.UWP.csproj",
+      "projectJsonPath": "E:\\idsfGit\\BooksApp\\BooksApp\\BooksApp.UWP\\project.json",
+      "packagesPath": "C:\\Users\\isanchez\\.nuget\\packages\\",
+      "outputPath": "E:\\idsfGit\\BooksApp\\BooksApp\\BooksApp.UWP\\obj\\",
       "projectStyle": "ProjectJson",
+      "configFilePaths": [
+        "C:\\Users\\isanchez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
       "frameworks": {
         "uap10.0.10586": {
           "projectReferences": {
-            "C:\\@GitIdsanchezf\\BooksApp\\BooksApp\\BooksApp\\BooksApp.csproj": {
-              "projectPath": "C:\\@GitIdsanchezf\\BooksApp\\BooksApp\\BooksApp\\BooksApp.csproj"
+            "E:\\idsfGit\\BooksApp\\BooksApp\\BooksApp\\BooksApp.csproj": {
+              "projectPath": "E:\\idsfGit\\BooksApp\\BooksApp\\BooksApp\\BooksApp.csproj"
             }
           }
         }

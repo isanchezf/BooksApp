@@ -17,11 +17,9 @@
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <TextCell Text="{Binding Titulo}" Detail="{Binding Genero}" TextColor="Black">
-                            <!--<TextCell.ContextActions>
-                        <MenuItem Clicked="OnDeleteBook"
-                                  CommandParameter="{Binding}"
-                                  Text="Delete" IsDestructive="True" />
-                    </TextCell.ContextActions>-->
+                            <TextCell.ContextActions>
+                                <MenuItem Text="Delete" IsDestructive="True" />
+                            </TextCell.ContextActions>
                         </TextCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>

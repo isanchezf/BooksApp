@@ -37,7 +37,6 @@ E:\idsfGit\BooksApp\BooksApp\BooksApp\bin\Debug\System.Net.Http.Primitives.xml
 E:\idsfGit\BooksApp\BooksApp\BooksApp\obj\Debug\BooksApp.csproj.App.config
 E:\idsfGit\BooksApp\BooksApp\BooksApp\obj\Debug\BooksApp.Views.Book.BooksView.xaml.g.cs
 E:\idsfGit\BooksApp\BooksApp\BooksApp\obj\Debug\BooksApp.Views.Book.AddBookView.xaml.g.cs
-E:\idsfGit\BooksApp\BooksApp\BooksApp\obj\Debug\BooksApp.csprojResolveAssemblyReference.cache
 C:\@GitIdsanchezf\BooksApp\BooksApp\BooksApp\bin\Debug\BooksApp.dll.config
 C:\@GitIdsanchezf\BooksApp\BooksApp\BooksApp\bin\Debug\Newtonsoft.Json.dll
 C:\@GitIdsanchezf\BooksApp\BooksApp\BooksApp\bin\Debug\System.Net.Http.dll
@@ -51,3 +50,4 @@ C:\@GitIdsanchezf\BooksApp\BooksApp\BooksApp\obj\Debug\BooksApp.csproj.App.confi
 C:\@GitIdsanchezf\BooksApp\BooksApp\BooksApp\obj\Debug\BooksApp.Views.Book.AddBookView.xaml.g.cs
 C:\@GitIdsanchezf\BooksApp\BooksApp\BooksApp\obj\Debug\BooksApp.Views.Book.BooksView.xaml.g.cs
 C:\@GitIdsanchezf\BooksApp\BooksApp\BooksApp\obj\Debug\BooksApp.csprojResolveAssemblyReference.cache
+E:\idsfGit\BooksApp\BooksApp\BooksApp\obj\Debug\BooksApp.csprojResolveAssemblyReference.cache
