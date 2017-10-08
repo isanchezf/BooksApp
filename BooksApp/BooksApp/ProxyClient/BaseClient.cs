@@ -13,39 +13,28 @@ namespace BooksApp.ProxyClient
     {
         protected string Url;
         private string _authorizationKey;
+        private readonly IHttpClient _httpClient;
 
-        public BaseClient(string service)
+        public BaseClient(string service, IHttpClient httpClient)
         {
             Url = Path.Combine("http://fakeapibooks.azurewebsites.net/Api",service);
-        }
-
-        protected async Task<HttpClient> GetClient()
-        {
-            var client = new HttpClient();
-            if (string.IsNullOrEmpty(_authorizationKey))
-            {
-                //_authorizationKey = await client.GetStringAsync(Url + "login");
-                //_authorizationKey = JsonConvert.DeserializeObject<string>(_authorizationKey);
-                //client.DefaultRequestHeaders.Add("Authorization", _authorizationKey);
-            }
-            client.DefaultRequestHeaders.Add("Accept", "application/json");
-            return client;
+            _httpClient = httpClient;
         }
 
         public async Task<IEnumerable<T>> GetAll()
         {
-            var client = await GetClient();
-            var result = await client.GetStringAsync(Url);
+            var result = await _httpClient.GetStringAsync(Url, _authorizationKey);
             return JsonConvert.DeserializeObject<IEnumerable<T>>(result);
         }
 
         public async Task<T> Add(T entity)
         {
-            HttpClient client = await GetClient();
-            var response = await client.PostAsync(Url,
+            var response = await _httpClient.PostAsync(Url,
                 new StringContent(
                     JsonConvert.SerializeObject(entity),
-                    Encoding.UTF8, "application/json"));
+                    Encoding.UTF8, "application/json"),
+                _authorizationKey
+                );
 
             return JsonConvert.DeserializeObject<T>(
                 await response.Content.ReadAsStringAsync());

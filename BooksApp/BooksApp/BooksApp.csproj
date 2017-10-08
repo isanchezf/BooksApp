@@ -41,6 +41,7 @@
     <Compile Include="Behaviors\ValidateEmptyEntryBehavior.cs" />
     <Compile Include="Models\Book.cs" />
     <Compile Include="ProxyClient\BaseClient.cs" />
+    <Compile Include="ProxyClient\IHttpClient.cs" />
     <Compile Include="ViewModels\Book\AddBookViewModel.cs" />
     <Compile Include="Views\Book\AddBookView.xaml.cs">
       <DependentUpon>AddBookView.xaml</DependentUpon>
