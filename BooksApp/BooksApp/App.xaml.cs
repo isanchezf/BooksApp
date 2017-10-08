@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BooksApp.ProxyClient;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,11 +10,11 @@ namespace BooksApp
 {
     public partial class App : Application
     {
-        public App()
+        public App(IHttpClient httpClient)
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new BooksApp.Views.Book.BooksView());
+            MainPage = new NavigationPage(new Views.Book.BooksView(httpClient));
         }
 
         protected override void OnStart()

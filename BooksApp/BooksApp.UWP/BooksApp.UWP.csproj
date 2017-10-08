@@ -152,6 +152,10 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\BooksApp.ResilientHttp\BooksApp.ResilientHttp.csproj">
+      <Project>{7737a6bb-aefe-477c-aebb-05372ec5fb92}</Project>
+      <Name>BooksApp.ResilientHttp</Name>
+    </ProjectReference>
     <ProjectReference Include="..\BooksApp\BooksApp.csproj">
       <Project>{ae6902b2-385b-42d1-85a2-ec229e06b42e}</Project>
       <Name>BooksApp</Name>

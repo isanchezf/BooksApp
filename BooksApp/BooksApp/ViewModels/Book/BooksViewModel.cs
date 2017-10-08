@@ -34,10 +34,10 @@
         }
         #endregion Atributes
 
-        public BooksViewModel(INavigation navigation)
+        public BooksViewModel(INavigation navigation, IHttpClient httpClient)
         {
             Books = new ObservableCollection<Book>();
-            _bookContextWs = new BaseClient<Book>("Books");
+            _bookContextWs = new BaseClient<Book>("Books", httpClient);
             Task.Factory.StartNew(LoadBooks);
             OnAddNewBookCommand = new Command(async () => await AddBook());
             Navigation = navigation;
@@ -64,7 +64,6 @@
             if (Books.Count <= 0)
             {
                 var booksResponse = await _bookContextWs.GetAll();
-
                 foreach (var item in booksResponse)
                 {
                     Books.Add(item);

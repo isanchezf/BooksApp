@@ -107,10 +107,6 @@ C:\@GitIdsanchezf\BooksApp\BooksApp\BooksApp.Android\obj\Debug\res\drawable-xhdp
 C:\@GitIdsanchezf\BooksApp\BooksApp\BooksApp.Android\obj\Debug\res\drawable-xhdpi\ic_autorenew.png
 C:\@GitIdsanchezf\BooksApp\BooksApp\BooksApp.Android\obj\Debug\res\drawable-xxhdpi\ic_action_new.png
 C:\@GitIdsanchezf\BooksApp\BooksApp\BooksApp.Android\obj\Debug\res\drawable-xxhdpi\ic_autorenew.png
-C:\@GitIdsanchezf\BooksApp\BooksApp\BooksApp.Android\obj\Debug\android\assets\FormsViewGroup.dll.mdb
-C:\@GitIdsanchezf\BooksApp\BooksApp\BooksApp.Android\obj\Debug\android\assets\Xamarin.Forms.Core.dll.mdb
-C:\@GitIdsanchezf\BooksApp\BooksApp\BooksApp.Android\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
-C:\@GitIdsanchezf\BooksApp\BooksApp\BooksApp.Android\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
 E:\idsfGit\BooksApp\BooksApp\BooksApp.Android\bin\Debug\BooksApp.dll.mdb
 E:\idsfGit\BooksApp\BooksApp\BooksApp.Android\bin\Debug\BooksApp.Android.dll.mdb
 E:\idsfGit\BooksApp\BooksApp\BooksApp.Android\obj\Debug\android\assets\BooksApp.Android.dll.mdb
@@ -119,3 +115,13 @@ E:\idsfGit\BooksApp\BooksApp\BooksApp.Android\obj\Debug\android\assets\FormsView
 E:\idsfGit\BooksApp\BooksApp\BooksApp.Android\obj\Debug\android\assets\Xamarin.Forms.Core.dll.mdb
 E:\idsfGit\BooksApp\BooksApp\BooksApp.Android\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 E:\idsfGit\BooksApp\BooksApp\BooksApp.Android\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
+C:\@GitIdsanchezf\BooksApp\BooksApp\BooksApp.Android\obj\Debug\BooksApp.Android.csproj.CoreCompileInputs.cache
+C:\@GitIdsanchezf\BooksApp\BooksApp\BooksApp.Android\bin\Debug\BooksApp.ResilientHttp.dll
+C:\@GitIdsanchezf\BooksApp\BooksApp\BooksApp.Android\bin\Debug\Polly.dll
+C:\@GitIdsanchezf\BooksApp\BooksApp\BooksApp.Android\bin\Debug\BooksApp.ResilientHttp.pdb
+C:\@GitIdsanchezf\BooksApp\BooksApp\BooksApp.Android\bin\Debug\Polly.pdb
+C:\@GitIdsanchezf\BooksApp\BooksApp\BooksApp.Android\bin\Debug\Polly.xml
+C:\@GitIdsanchezf\BooksApp\BooksApp\BooksApp.Android\obj\Debug\android\assets\FormsViewGroup.dll.mdb
+C:\@GitIdsanchezf\BooksApp\BooksApp\BooksApp.Android\obj\Debug\android\assets\Xamarin.Forms.Core.dll.mdb
+C:\@GitIdsanchezf\BooksApp\BooksApp\BooksApp.Android\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
+C:\@GitIdsanchezf\BooksApp\BooksApp\BooksApp.Android\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb

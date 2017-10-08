@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using BooksApp.ViewModels.Book;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using BooksApp.ProxyClient;
 
 namespace BooksApp.Views.Book
 {
@@ -14,9 +15,9 @@ namespace BooksApp.Views.Book
     {
         public BooksViewModel BooksViewModelContext { get; }
 
-        public BooksView()
+        public BooksView(IHttpClient httpClient)
         {
-            BooksViewModelContext = new BooksViewModel(Navigation);
+            BooksViewModelContext = new BooksViewModel(Navigation, httpClient);
             BindingContext = BooksViewModelContext;
             InitializeComponent();
         }

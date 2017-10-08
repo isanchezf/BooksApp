@@ -25,10 +25,10 @@
                 </ListView.ItemTemplate>
             </ListView>
         </StackLayout>
-        <StackLayout IsVisible="{Binding IsBusy}" Padding="12"
+        <StackLayout IsVisible="{Binding IsBusy, Mode=OneWay}" Padding="12"
                  AbsoluteLayout.LayoutFlags="PositionProportional"
                  AbsoluteLayout.LayoutBounds="0.5,0.5,-1,-1">
-            <ActivityIndicator IsRunning="{Binding IsBusy}" Color ="#80000000"/>
+            <ActivityIndicator IsRunning="{Binding IsBusy, Mode=OneWay}" Color ="#80000000"/>
             <Label Text="Loading..." HorizontalOptions="Center" TextColor="White"/>
         </StackLayout>
     </AbsoluteLayout>

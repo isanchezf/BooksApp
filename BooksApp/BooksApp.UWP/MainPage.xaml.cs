@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BooksApp.ResilientHttp.ResilienceHttp;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -19,9 +20,10 @@ namespace BooksApp.UWP
     {
         public MainPage()
         {
-            this.InitializeComponent();
-
-            LoadApplication(new BooksApp.App());
+            InitializeComponent();
+            var factory = new ResilientHttpClientFactory();
+            var httpClient = factory.CreateResilientHttpClient();
+            LoadApplication(new BooksApp.App(httpClient));
         }
     }
 }

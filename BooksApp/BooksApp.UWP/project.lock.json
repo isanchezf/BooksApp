@@ -350,6 +350,18 @@
           "lib/netstandard1.3/Newtonsoft.Json.dll": {}
         }
       },
+      "Polly/5.3.1": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Polly.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Polly.dll": {}
+        }
+      },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
         "type": "package",
         "runtimeTargets": {
@@ -1064,7 +1076,7 @@
           "lib/netcore50/System.Linq.Queryable.dll": {}
         }
       },
-      "System.Net.Http/4.3.0": {
+      "System.Net.Http/4.3.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0",
@@ -2387,7 +2399,7 @@
           }
         }
       },
-      "Xamarin.Forms/2.3.4.224": {
+      "Xamarin.Forms/2.3.4.247": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -2407,6 +2419,17 @@
       },
       "BooksApp/1.0.0": {
         "type": "project"
+      },
+      "BooksApp.ResilientHttp/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v1.4",
+        "dependencies": {
+          "BooksApp": "1.0.0",
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "10.0.3",
+          "Polly": "5.3.1",
+          "System.Net.Http": "4.3.3"
+        }
       }
     },
     "UAP,Version=v10.0.10586/win10-arm": {
@@ -2704,6 +2727,18 @@
         },
         "runtime": {
           "lib/netstandard1.3/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Polly/5.3.1": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Polly.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Polly.dll": {}
         }
       },
       "runtime.any.System.Collections/4.3.0": {
@@ -3648,7 +3683,7 @@
           "lib/netcore50/System.Linq.Queryable.dll": {}
         }
       },
-      "System.Net.Http/4.3.0": {
+      "System.Net.Http/4.3.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0",
@@ -4850,7 +4885,7 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Xamarin.Forms/2.3.4.224": {
+      "Xamarin.Forms/2.3.4.247": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -4870,6 +4905,17 @@
       },
       "BooksApp/1.0.0": {
         "type": "project"
+      },
+      "BooksApp.ResilientHttp/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v1.4",
+        "dependencies": {
+          "BooksApp": "1.0.0",
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "10.0.3",
+          "Polly": "5.3.1",
+          "System.Net.Http": "4.3.3"
+        }
       }
     },
     "UAP,Version=v10.0.10586/win10-arm-aot": {
@@ -5168,6 +5214,18 @@
         },
         "runtime": {
           "lib/netstandard1.3/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Polly/5.3.1": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Polly.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Polly.dll": {}
         }
       },
       "runtime.aot.System.Collections/4.3.0": {
@@ -6147,7 +6205,7 @@
           "lib/netcore50/System.Linq.Queryable.dll": {}
         }
       },
-      "System.Net.Http/4.3.0": {
+      "System.Net.Http/4.3.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0",
@@ -7349,7 +7407,7 @@
           "runtimes/aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Xamarin.Forms/2.3.4.224": {
+      "Xamarin.Forms/2.3.4.247": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -7369,6 +7427,17 @@
       },
       "BooksApp/1.0.0": {
         "type": "project"
+      },
+      "BooksApp.ResilientHttp/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v1.4",
+        "dependencies": {
+          "BooksApp": "1.0.0",
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "10.0.3",
+          "Polly": "5.3.1",
+          "System.Net.Http": "4.3.3"
+        }
       }
     },
     "UAP,Version=v10.0.10586/win10-x64": {
@@ -7669,6 +7738,18 @@
         },
         "runtime": {
           "lib/netstandard1.3/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Polly/5.3.1": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Polly.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Polly.dll": {}
         }
       },
       "runtime.any.System.Collections/4.3.0": {
@@ -8619,7 +8700,7 @@
           "lib/netcore50/System.Linq.Queryable.dll": {}
         }
       },
-      "System.Net.Http/4.3.0": {
+      "System.Net.Http/4.3.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0",
@@ -9821,7 +9902,7 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Xamarin.Forms/2.3.4.224": {
+      "Xamarin.Forms/2.3.4.247": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -9841,6 +9922,17 @@
       },
       "BooksApp/1.0.0": {
         "type": "project"
+      },
+      "BooksApp.ResilientHttp/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v1.4",
+        "dependencies": {
+          "BooksApp": "1.0.0",
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "10.0.3",
+          "Polly": "5.3.1",
+          "System.Net.Http": "4.3.3"
+        }
       }
     },
     "UAP,Version=v10.0.10586/win10-x64-aot": {
@@ -10142,6 +10234,18 @@
         },
         "runtime": {
           "lib/netstandard1.3/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Polly/5.3.1": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Polly.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Polly.dll": {}
         }
       },
       "runtime.aot.System.Collections/4.3.0": {
@@ -11127,7 +11231,7 @@
           "lib/netcore50/System.Linq.Queryable.dll": {}
         }
       },
-      "System.Net.Http/4.3.0": {
+      "System.Net.Http/4.3.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0",
@@ -12329,7 +12433,7 @@
           "runtimes/aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Xamarin.Forms/2.3.4.224": {
+      "Xamarin.Forms/2.3.4.247": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -12349,6 +12453,17 @@
       },
       "BooksApp/1.0.0": {
         "type": "project"
+      },
+      "BooksApp.ResilientHttp/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v1.4",
+        "dependencies": {
+          "BooksApp": "1.0.0",
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "10.0.3",
+          "Polly": "5.3.1",
+          "System.Net.Http": "4.3.3"
+        }
       }
     },
     "UAP,Version=v10.0.10586/win10-x86": {
@@ -12649,6 +12764,18 @@
         },
         "runtime": {
           "lib/netstandard1.3/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Polly/5.3.1": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Polly.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Polly.dll": {}
         }
       },
       "runtime.any.System.Collections/4.3.0": {
@@ -13599,7 +13726,7 @@
           "lib/netcore50/System.Linq.Queryable.dll": {}
         }
       },
-      "System.Net.Http/4.3.0": {
+      "System.Net.Http/4.3.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0",
@@ -14801,7 +14928,7 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Xamarin.Forms/2.3.4.224": {
+      "Xamarin.Forms/2.3.4.247": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -14821,6 +14948,17 @@
       },
       "BooksApp/1.0.0": {
         "type": "project"
+      },
+      "BooksApp.ResilientHttp/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v1.4",
+        "dependencies": {
+          "BooksApp": "1.0.0",
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "10.0.3",
+          "Polly": "5.3.1",
+          "System.Net.Http": "4.3.3"
+        }
       }
     },
     "UAP,Version=v10.0.10586/win10-x86-aot": {
@@ -15122,6 +15260,18 @@
         },
         "runtime": {
           "lib/netstandard1.3/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Polly/5.3.1": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Polly.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Polly.dll": {}
         }
       },
       "runtime.aot.System.Collections/4.3.0": {
@@ -16107,7 +16257,7 @@
           "lib/netcore50/System.Linq.Queryable.dll": {}
         }
       },
-      "System.Net.Http/4.3.0": {
+      "System.Net.Http/4.3.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0",
@@ -17309,7 +17459,7 @@
           "runtimes/aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Xamarin.Forms/2.3.4.224": {
+      "Xamarin.Forms/2.3.4.247": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -17329,6 +17479,17 @@
       },
       "BooksApp/1.0.0": {
         "type": "project"
+      },
+      "BooksApp.ResilientHttp/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v1.4",
+        "dependencies": {
+          "BooksApp": "1.0.0",
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "10.0.3",
+          "Polly": "5.3.1",
+          "System.Net.Http": "4.3.3"
+        }
       }
     }
   },
@@ -17671,6 +17832,22 @@
         "newtonsoft.json.10.0.3.nupkg.sha512",
         "newtonsoft.json.nuspec",
         "tools/install.ps1"
+      ]
+    },
+    "Polly/5.3.1": {
+      "sha512": "vEAUy16SgCevG0w7POAwQ4jVJ7HFEKibuzORrqg1L8pIpfgFjJbScxHE0BU1CbkRS/tTxshEe0dzDS53oJCLiQ==",
+      "type": "package",
+      "path": "polly/5.3.1",
+      "files": [
+        "lib/net45/Polly.dll",
+        "lib/net45/Polly.pdb",
+        "lib/net45/Polly.xml",
+        "lib/netstandard1.1/Polly.deps.json",
+        "lib/netstandard1.1/Polly.dll",
+        "lib/netstandard1.1/Polly.pdb",
+        "lib/netstandard1.1/Polly.xml",
+        "polly.5.3.1.nupkg.sha512",
+        "polly.nuspec"
       ]
     },
     "runtime.any.System.Collections/4.3.0": {
@@ -20561,10 +20738,10 @@
         "ref/xamarinwatchos10/_._"
       ]
     },
-    "System.Net.Http/4.3.0": {
-      "sha512": "sYg+FtILtRQuYWSIAuNOELwVuVsxVyJGWQyOnlAzhV4xvhyFnON1bAzYYC+jjRW8JREM45R0R5Dgi8MTC5sEwA==",
+    "System.Net.Http/4.3.3": {
+      "sha512": "7rCqIbkC/P2+A00NoDH5gnvFhADmX7Dc4INvsOajbU1MVhktE9vZNrjPtF82N6Uo7obK+yzlrPUv/M+snnN/9w==",
       "type": "package",
-      "path": "system.net.http/4.3.0",
+      "path": "system.net.http/4.3.3",
       "files": [
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
@@ -20584,49 +20761,9 @@
         "ref/monotouch10/_._",
         "ref/net45/_._",
         "ref/net46/System.Net.Http.dll",
-        "ref/net46/System.Net.Http.xml",
-        "ref/net46/de/System.Net.Http.xml",
-        "ref/net46/es/System.Net.Http.xml",
-        "ref/net46/fr/System.Net.Http.xml",
-        "ref/net46/it/System.Net.Http.xml",
-        "ref/net46/ja/System.Net.Http.xml",
-        "ref/net46/ko/System.Net.Http.xml",
-        "ref/net46/ru/System.Net.Http.xml",
-        "ref/net46/zh-hans/System.Net.Http.xml",
-        "ref/net46/zh-hant/System.Net.Http.xml",
         "ref/netcore50/System.Net.Http.dll",
-        "ref/netcore50/System.Net.Http.xml",
-        "ref/netcore50/de/System.Net.Http.xml",
-        "ref/netcore50/es/System.Net.Http.xml",
-        "ref/netcore50/fr/System.Net.Http.xml",
-        "ref/netcore50/it/System.Net.Http.xml",
-        "ref/netcore50/ja/System.Net.Http.xml",
-        "ref/netcore50/ko/System.Net.Http.xml",
-        "ref/netcore50/ru/System.Net.Http.xml",
-        "ref/netcore50/zh-hans/System.Net.Http.xml",
-        "ref/netcore50/zh-hant/System.Net.Http.xml",
         "ref/netstandard1.1/System.Net.Http.dll",
-        "ref/netstandard1.1/System.Net.Http.xml",
-        "ref/netstandard1.1/de/System.Net.Http.xml",
-        "ref/netstandard1.1/es/System.Net.Http.xml",
-        "ref/netstandard1.1/fr/System.Net.Http.xml",
-        "ref/netstandard1.1/it/System.Net.Http.xml",
-        "ref/netstandard1.1/ja/System.Net.Http.xml",
-        "ref/netstandard1.1/ko/System.Net.Http.xml",
-        "ref/netstandard1.1/ru/System.Net.Http.xml",
-        "ref/netstandard1.1/zh-hans/System.Net.Http.xml",
-        "ref/netstandard1.1/zh-hant/System.Net.Http.xml",
         "ref/netstandard1.3/System.Net.Http.dll",
-        "ref/netstandard1.3/System.Net.Http.xml",
-        "ref/netstandard1.3/de/System.Net.Http.xml",
-        "ref/netstandard1.3/es/System.Net.Http.xml",
-        "ref/netstandard1.3/fr/System.Net.Http.xml",
-        "ref/netstandard1.3/it/System.Net.Http.xml",
-        "ref/netstandard1.3/ja/System.Net.Http.xml",
-        "ref/netstandard1.3/ko/System.Net.Http.xml",
-        "ref/netstandard1.3/ru/System.Net.Http.xml",
-        "ref/netstandard1.3/zh-hans/System.Net.Http.xml",
-        "ref/netstandard1.3/zh-hant/System.Net.Http.xml",
         "ref/portable-net45+win8+wpa81/_._",
         "ref/win8/_._",
         "ref/wpa81/_._",
@@ -20637,7 +20774,7 @@
         "runtimes/win/lib/net46/System.Net.Http.dll",
         "runtimes/win/lib/netcore50/System.Net.Http.dll",
         "runtimes/win/lib/netstandard1.3/System.Net.Http.dll",
-        "system.net.http.4.3.0.nupkg.sha512",
+        "system.net.http.4.3.3.nupkg.sha512",
         "system.net.http.nuspec"
       ]
     },
@@ -23928,10 +24065,10 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
-    "Xamarin.Forms/2.3.4.224": {
-      "sha512": "cjA3h83bCmnEjEYLcvi2n+rPc3rs3kuB/r5z5R/BFtBLp8kgV8AEImKBcYglsZ80uX3OSIVnPXN9lJ25GMGAmg==",
+    "Xamarin.Forms/2.3.4.247": {
+      "sha512": "+6VN8IBSah7EcNJ4SV3pIhNA8tNlBaPLfr3+hQpPIllueJrXI5QtjM0tAJusPc2V1cYyC4YKvA1fs5c/A8RrBw==",
       "type": "package",
-      "path": "xamarin.forms/2.3.4.224",
+      "path": "xamarin.forms/2.3.4.247",
       "files": [
         "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Mono.Cecil.Mdb.dll",
         "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Mono.Cecil.Pdb.dll",
@@ -24020,6 +24157,7 @@
         "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.Core.pdb",
         "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.Core.xml",
         "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.Platform.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.Platform.dll.mdb",
         "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.Platform.pdb",
         "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.Xaml.dll",
         "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.Xaml.dll.mdb",
@@ -24081,7 +24219,7 @@
         "lib/wpa81/Xamarin.Forms.Platform.dll",
         "lib/wpa81/Xamarin.Forms.Xaml.dll",
         "lib/wpa81/Xamarin.Forms.Xaml.xml",
-        "xamarin.forms.2.3.4.224.nupkg.sha512",
+        "xamarin.forms.2.3.4.247.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
     },
@@ -24089,30 +24227,36 @@
       "type": "project",
       "path": "../BooksApp/BooksApp.csproj",
       "msbuildProject": "../BooksApp/BooksApp.csproj"
+    },
+    "BooksApp.ResilientHttp/1.0.0": {
+      "type": "project",
+      "path": "../../BooksApp.ResilientHttp/BooksApp.ResilientHttp.csproj",
+      "msbuildProject": "../../BooksApp.ResilientHttp/BooksApp.ResilientHttp.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "": [
       "Microsoft.NETCore.UniversalWindowsPlatform >= 5.2.2",
       "Newtonsoft.Json >= 10.0.3",
-      "Xamarin.Forms >= 2.3.4.224"
+      "Polly >= 5.3.1",
+      "Xamarin.Forms >= 2.3.4.247"
     ],
     "UAP,Version=v10.0.10586": []
   },
   "packageFolders": {
-    "C:\\Users\\isanchez\\.nuget\\packages\\": {}
+    "C:\\Users\\ivanc\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
-      "projectUniqueName": "E:\\idsfGit\\BooksApp\\BooksApp\\BooksApp.UWP\\BooksApp.UWP.csproj",
+      "projectUniqueName": "C:\\@GitIdsanchezf\\BooksApp\\BooksApp\\BooksApp.UWP\\BooksApp.UWP.csproj",
       "projectName": "BooksApp.UWP",
-      "projectPath": "E:\\idsfGit\\BooksApp\\BooksApp\\BooksApp.UWP\\BooksApp.UWP.csproj",
-      "projectJsonPath": "E:\\idsfGit\\BooksApp\\BooksApp\\BooksApp.UWP\\project.json",
-      "packagesPath": "C:\\Users\\isanchez\\.nuget\\packages\\",
-      "outputPath": "E:\\idsfGit\\BooksApp\\BooksApp\\BooksApp.UWP\\obj\\",
+      "projectPath": "C:\\@GitIdsanchezf\\BooksApp\\BooksApp\\BooksApp.UWP\\BooksApp.UWP.csproj",
+      "projectJsonPath": "C:\\@GitIdsanchezf\\BooksApp\\BooksApp\\BooksApp.UWP\\project.json",
+      "packagesPath": "C:\\Users\\ivanc\\.nuget\\packages\\",
+      "outputPath": "C:\\@GitIdsanchezf\\BooksApp\\BooksApp\\BooksApp.UWP\\obj\\",
       "projectStyle": "ProjectJson",
       "configFilePaths": [
-        "C:\\Users\\isanchez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ivanc\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "sources": {
@@ -24122,8 +24266,11 @@
       "frameworks": {
         "uap10.0.10586": {
           "projectReferences": {
-            "E:\\idsfGit\\BooksApp\\BooksApp\\BooksApp\\BooksApp.csproj": {
-              "projectPath": "E:\\idsfGit\\BooksApp\\BooksApp\\BooksApp\\BooksApp.csproj"
+            "C:\\@GitIdsanchezf\\BooksApp\\BooksApp.ResilientHttp\\BooksApp.ResilientHttp.csproj": {
+              "projectPath": "C:\\@GitIdsanchezf\\BooksApp\\BooksApp.ResilientHttp\\BooksApp.ResilientHttp.csproj"
+            },
+            "C:\\@GitIdsanchezf\\BooksApp\\BooksApp\\BooksApp\\BooksApp.csproj": {
+              "projectPath": "C:\\@GitIdsanchezf\\BooksApp\\BooksApp\\BooksApp\\BooksApp.csproj"
             }
           }
         }
@@ -24132,7 +24279,8 @@
     "dependencies": {
       "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
       "Newtonsoft.Json": "10.0.3",
-      "Xamarin.Forms": "2.3.4.224"
+      "Polly": "5.3.1",
+      "Xamarin.Forms": "2.3.4.247"
     },
     "frameworks": {
       "uap10.0.10586": {}

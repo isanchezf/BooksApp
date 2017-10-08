@@ -29,12 +29,7 @@ namespace BooksApp.ProxyClient
 
         public async Task<T> Add(T entity)
         {
-            var response = await _httpClient.PostAsync(Url,
-                new StringContent(
-                    JsonConvert.SerializeObject(entity),
-                    Encoding.UTF8, "application/json"),
-                _authorizationKey
-                );
+            var response = await _httpClient.PostAsync(Url, entity, _authorizationKey);
 
             return JsonConvert.DeserializeObject<T>(
                 await response.Content.ReadAsStringAsync());

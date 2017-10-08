@@ -6,6 +6,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using BooksApp.ResilientHttp.ResilienceHttp;
 
 namespace BooksApp.Droid
 {
@@ -19,8 +20,10 @@ namespace BooksApp.Droid
 
             base.OnCreate(bundle);
 
+            var factory = new ResilientHttpClientFactory();
+            var httpClient = factory.CreateResilientHttpClient();
             global::Xamarin.Forms.Forms.Init(this, bundle);
-            LoadApplication(new App());
+            LoadApplication(new BooksApp.App(httpClient));
         }
     }
 }

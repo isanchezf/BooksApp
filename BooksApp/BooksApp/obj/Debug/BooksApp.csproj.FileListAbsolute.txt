@@ -49,5 +49,6 @@ C:\@GitIdsanchezf\BooksApp\BooksApp\BooksApp\bin\Debug\System.Net.Http.Primitive
 C:\@GitIdsanchezf\BooksApp\BooksApp\BooksApp\obj\Debug\BooksApp.csproj.App.config
 C:\@GitIdsanchezf\BooksApp\BooksApp\BooksApp\obj\Debug\BooksApp.Views.Book.AddBookView.xaml.g.cs
 C:\@GitIdsanchezf\BooksApp\BooksApp\BooksApp\obj\Debug\BooksApp.Views.Book.BooksView.xaml.g.cs
-C:\@GitIdsanchezf\BooksApp\BooksApp\BooksApp\obj\Debug\BooksApp.csprojResolveAssemblyReference.cache
 E:\idsfGit\BooksApp\BooksApp\BooksApp\obj\Debug\BooksApp.csprojResolveAssemblyReference.cache
+C:\@GitIdsanchezf\BooksApp\BooksApp\BooksApp\obj\Debug\BooksApp.csproj.CoreCompileInputs.cache
+C:\@GitIdsanchezf\BooksApp\BooksApp\BooksApp\obj\Debug\BooksApp.csprojResolveAssemblyReference.cache

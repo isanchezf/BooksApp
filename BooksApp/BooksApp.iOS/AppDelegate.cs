@@ -4,6 +4,7 @@ using System.Linq;
 
 using Foundation;
 using UIKit;
+using BooksApp.ResilientHttp.ResilienceHttp;
 
 namespace BooksApp.iOS
 {
@@ -22,8 +23,10 @@ namespace BooksApp.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
+            var factory = new ResilientHttpClientFactory();
+            var httpClient = factory.CreateResilientHttpClient();
             global::Xamarin.Forms.Forms.Init();
-            LoadApplication(new App());
+            LoadApplication(new App(httpClient));
 
             return base.FinishedLaunching(app, options);
         }

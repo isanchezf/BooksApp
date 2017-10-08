@@ -100,8 +100,10 @@ class MonoPackageManager_Resources {
 		/* We need to ensure that "BooksApp.Android.dll" comes first in this list. */
 		"BooksApp.Android.dll",
 		"BooksApp.dll",
+		"BooksApp.ResilientHttp.dll",
 		"FormsViewGroup.dll",
 		"Newtonsoft.Json.dll",
+		"Polly.dll",
 		"Xamarin.Android.Support.Animated.Vector.Drawable.dll",
 		"Xamarin.Android.Support.Design.dll",
 		"Xamarin.Android.Support.v4.dll",
@@ -117,5 +119,5 @@ class MonoPackageManager_Resources {
 	};
 	public static final String[] Dependencies = new String[]{
 	};
-	public static final String ApiPackageName = "Mono.Android.Platform.ApiLevel_25";
+	public static final String ApiPackageName = "Mono.Android.Platform.ApiLevel_23";
 }
