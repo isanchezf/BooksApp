@@ -125,3 +125,10 @@ C:\@GitIdsanchezf\BooksApp\BooksApp\BooksApp.Android\obj\Debug\android\assets\Fo
 C:\@GitIdsanchezf\BooksApp\BooksApp\BooksApp.Android\obj\Debug\android\assets\Xamarin.Forms.Core.dll.mdb
 C:\@GitIdsanchezf\BooksApp\BooksApp\BooksApp.Android\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 C:\@GitIdsanchezf\BooksApp\BooksApp\BooksApp.Android\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
+E:\idsfGit\BooksApp\BooksApp\BooksApp.Android\bin\Debug\BooksApp.ResilientHttp.dll
+E:\idsfGit\BooksApp\BooksApp\BooksApp.Android\bin\Debug\Polly.dll
+E:\idsfGit\BooksApp\BooksApp\BooksApp.Android\bin\Debug\BooksApp.ResilientHttp.pdb
+E:\idsfGit\BooksApp\BooksApp\BooksApp.Android\bin\Debug\Polly.pdb
+E:\idsfGit\BooksApp\BooksApp\BooksApp.Android\bin\Debug\Polly.xml
+E:\idsfGit\BooksApp\BooksApp\BooksApp.Android\bin\Debug\Polly.dll.mdb
+E:\idsfGit\BooksApp\BooksApp\BooksApp.Android\obj\Debug\android\assets\Polly.dll.mdb

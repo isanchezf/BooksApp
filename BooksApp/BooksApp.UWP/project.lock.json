@@ -24244,19 +24244,19 @@
     "UAP,Version=v10.0.10586": []
   },
   "packageFolders": {
-    "C:\\Users\\ivanc\\.nuget\\packages\\": {}
+    "C:\\Users\\isanchez\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\@GitIdsanchezf\\BooksApp\\BooksApp\\BooksApp.UWP\\BooksApp.UWP.csproj",
+      "projectUniqueName": "E:\\idsfGit\\BooksApp\\BooksApp\\BooksApp.UWP\\BooksApp.UWP.csproj",
       "projectName": "BooksApp.UWP",
-      "projectPath": "C:\\@GitIdsanchezf\\BooksApp\\BooksApp\\BooksApp.UWP\\BooksApp.UWP.csproj",
-      "projectJsonPath": "C:\\@GitIdsanchezf\\BooksApp\\BooksApp\\BooksApp.UWP\\project.json",
-      "packagesPath": "C:\\Users\\ivanc\\.nuget\\packages\\",
-      "outputPath": "C:\\@GitIdsanchezf\\BooksApp\\BooksApp\\BooksApp.UWP\\obj\\",
+      "projectPath": "E:\\idsfGit\\BooksApp\\BooksApp\\BooksApp.UWP\\BooksApp.UWP.csproj",
+      "projectJsonPath": "E:\\idsfGit\\BooksApp\\BooksApp\\BooksApp.UWP\\project.json",
+      "packagesPath": "C:\\Users\\isanchez\\.nuget\\packages\\",
+      "outputPath": "E:\\idsfGit\\BooksApp\\BooksApp\\BooksApp.UWP\\obj\\",
       "projectStyle": "ProjectJson",
       "configFilePaths": [
-        "C:\\Users\\ivanc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\isanchez\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "sources": {
@@ -24266,11 +24266,11 @@
       "frameworks": {
         "uap10.0.10586": {
           "projectReferences": {
-            "C:\\@GitIdsanchezf\\BooksApp\\BooksApp.ResilientHttp\\BooksApp.ResilientHttp.csproj": {
-              "projectPath": "C:\\@GitIdsanchezf\\BooksApp\\BooksApp.ResilientHttp\\BooksApp.ResilientHttp.csproj"
+            "E:\\idsfGit\\BooksApp\\BooksApp.ResilientHttp\\BooksApp.ResilientHttp.csproj": {
+              "projectPath": "E:\\idsfGit\\BooksApp\\BooksApp.ResilientHttp\\BooksApp.ResilientHttp.csproj"
             },
-            "C:\\@GitIdsanchezf\\BooksApp\\BooksApp\\BooksApp\\BooksApp.csproj": {
-              "projectPath": "C:\\@GitIdsanchezf\\BooksApp\\BooksApp\\BooksApp\\BooksApp.csproj"
+            "E:\\idsfGit\\BooksApp\\BooksApp\\BooksApp\\BooksApp.csproj": {
+              "projectPath": "E:\\idsfGit\\BooksApp\\BooksApp\\BooksApp\\BooksApp.csproj"
             }
           }
         }
